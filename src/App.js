@@ -5,15 +5,19 @@ import { useFetch } from "./useFetch";
 
 function App() {
   const { loading, data } = useFetch();
- const [page, setPage] = useState(0);
- const [followers, setFollowers] = useState([]);
+  const [page, setPage] = useState(0);
+  const [followers, setFollowers] = useState([]);
 
- useEffect(() => {
-   if (loading) {
-     return;
-   }
-   setFollowers(data[page]);
- }, [loading]);
+  useEffect(() => {
+    if (loading) {
+      return;
+    }
+    setFollowers(data[page]);
+  }, [loading, page]);
+
+  const handlePage = (index) => {
+    setPage(index);
+  };
 
   return (
     <div className="App">
@@ -28,7 +32,19 @@ function App() {
             <Follower key={follower.id} {...follower} />
           ))}
         </div>
-        {!loading && <div className="btn-container"> </div>}
+        {!loading && (
+          <div className="btn-container">
+            {data.map((item, index) => (
+              <button
+                key={index}
+                className={`page-btn ${index === page ? "active-btn": null}`}
+                onClick={() => handlePage(index)}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
