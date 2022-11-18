@@ -24,3 +24,7 @@
   border-radius: 12px;
   padding: 2px 12px;
 }
+
+a:hover {
+  filter: brightness(110%);
+}

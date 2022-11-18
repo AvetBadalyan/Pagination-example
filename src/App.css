@@ -43,8 +43,27 @@
   background-color: rgb(63, 154, 232);
   border: 1px solid black;
   padding: 4px 12px;
+  color: rgb(7, 43, 70);
 }
 
-.active-btn {
+.active-btn,
+.prev-btn:hover,
+.next-btn:hover {
   background-color: rgb(7, 43, 70);
+  color: white;
+}
+
+.prev-btn,
+.next-btn {
+  color: rgb(7, 43, 70);
+  padding: 4px 12px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+button:hover {
+  filter: brightness(120%);
 }
