@@ -1,6 +1,12 @@
 import React from "react";
 import "./Follower.css";
 
-export default function Follower() {
-  return <div>Follower</div>;
+export default function Follower({ avatar_url, html_url, login }) {
+  return (
+    <article className="card">
+      <img src={avatar_url} alt={login} />
+      <h4>{login}</h4>
+      <a href={html_url}>View Profile</a>
+    </article>
+  );
 }

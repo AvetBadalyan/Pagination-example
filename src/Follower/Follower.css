@@ -1,0 +1,26 @@
+.card {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 8px;
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: rgb(63, 154, 232);
+  color: white;
+  border-radius: 12px;
+  padding: 2px 12px;
+}

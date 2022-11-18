@@ -1,0 +1,31 @@
+.followers {
+  padding: 12px;
+}
+
+.followers-container {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+  margin: 8px;
+}
+
+.underline {
+  background-color: rgb(63, 154, 232);
+  width: 100px;
+  height: 4px;
+  margin: 2px;
+}
