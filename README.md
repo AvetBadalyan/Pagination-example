@@ -1,3 +1,12 @@
+## Pagination Example
+
+This is a little app to Fetch Data from API and organize PAGINATION, for example you have 100 users came from server, you would like to separate them 10 by 10, create buttons to navigate from one group to another, previous and next pages.
+With Mobile adaptation.
+
+Go to WEBSITE of Pagination Example [Click Here](https://pagination-3406b.web.app/) <br />
+
+![screenshot](.//screenshots/pagination%20screenshot.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

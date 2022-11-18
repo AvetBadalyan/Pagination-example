@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <div className="section-title">
-        <h1> {loading ? "loading..." : "Pagination"}</h1>
+        <h1> {loading ? "Loading..." : "Pagination"}</h1>
         <div className="underline"> </div>
       </div>
 

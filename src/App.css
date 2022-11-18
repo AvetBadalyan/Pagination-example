@@ -1,10 +1,6 @@
-.followers {
-  padding: 12px;
-}
-
 .followers-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 16px auto;
   box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid white;
   border-radius: 8px;
@@ -25,7 +21,7 @@
 
 .underline {
   background-color: rgb(63, 154, 232);
-  width: 100px;
+  width: 120px;
   height: 4px;
   margin: 2px;
 }
@@ -36,7 +32,9 @@
   align-items: center;
   text-align: center;
   gap: 8px;
-  margin: 12px auto;
+  margin: 16px auto;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
 .page-btn {
